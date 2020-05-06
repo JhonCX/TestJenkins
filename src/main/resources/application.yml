@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: paiban
+  mvc:
+    view:
+      # 页面默认前缀目录
+      # 响应页面默认后缀
+      suffix: .html
+      prefix: classpath:/templates/
+    static-path-pattern: /static/**
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy/MM/dd HH:mm:ss
+# Logger Config
+logging:
+  level:
+    com.cc.yhzt.mapper.*: off
